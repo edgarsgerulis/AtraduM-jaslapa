@@ -1,0 +1,53 @@
+-<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shady Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="page">
+        <div id="top" >
+            <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    Sākums
+                </text>
+            </svg>
+        </div>
+        <div id="navi">
+            <ul>
+                <a href="index.html"><li class="navButton Butt">Sākums</li></a>
+                <a href="info.html"><li class="navButton">Info</li></a>
+                <a href="par.html"><li class="navButton">Par Mums</li></a>
+                <a href="kontakti.html"><li class="navButton">Kontakti</li></a>
+                
+            </ul>
+        </div>
+        <div id="content" >
+            <div class="login">
+                    <form action='proc.php' method='POST'>
+                        Iedodiet Man Datus
+                        <input onchange="enableButton()" id='loginName' name= "login" type="text" placeholder="Username">
+                        <input onchange="enableButton()" id='passwordName' name="password" type="password"placeholder="Password">
+                        <br></br>
+                        <button id="login" disabled type='submit' class="myButton">Login</button>
+                    </form>
+                </div>
+            </div>
+            <div id='content'>
+                <div class="login">
+                    <form action='add.php' method='POST'>
+                        <input name="vards" type="text" placeholder="vards">
+                        <input name="uzvards" type="text" placeholder="uzvards">
+                        <input name="login" type="text" placeholder="login">
+                        <input name="password" type="text" placeholder="parole">
+                        <br></br>
+                        <button type="submit" class="myButton">Login</button>
+                    </form>
+                </div>
+            </div>
+</body>
+</html>
