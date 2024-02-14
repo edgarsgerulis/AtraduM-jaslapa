@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Atradu!</h2>
+    <button style="background-color: #007bff; color: #fff;" onclick="login()">Login</button>
+    <button style="background-color: #28a745; color: #fff;" onclick="register()">Register</button>
+    
+    <script>
+        function login() {
+            window.location.href = "Login.html"; 
+        }
+        
+        function register() {
+            window.location.href = "Register.html"; 
+        }
+    </script>
+</body>
+</html>

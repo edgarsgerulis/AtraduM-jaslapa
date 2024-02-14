@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ad5858;
-    position:relative;
   }
   
   header, nav, main, footer {
@@ -47,4 +46,12 @@ body {
     color: #fff;
     text-align: n;
     padding-bottom: 20px;
+  }
+  .logout-button {
+    position: absolute;
+    font-size: larger;
+    top: 10px;
+    right: 10px;
+    background-color:  #333;
+    color:white;
   }
