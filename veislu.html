@@ -23,7 +23,7 @@
 
     <div>
       <h2>Ja pazaudēji</h2>
-      <form id = "japazForm">
+      <form id="japazForm">
         <div>
           <label for="ko">Ko pazaudēji?:</label>
           <input type="text" id="ko" name="ko">
@@ -36,13 +36,13 @@
           <label for="kad">Kad pazaudēji?:</label>
           <input type="text" id="kad" name="kad">
         </div>
-        <button type="submit">Gatavs</button>
+        <button type="submit" onclick="showAlert('Item successfully requested')">Gatavs</button>
       </form>
     </div>
 
     <div>
       <h2>Ja atradi</h2>
-      <form>
+      <form id="jaatrForm">
         <div>
           <label for="koAtradi">Ko atradi?:</label>
           <input type="text" id="koAtradi" name="koAtradi">
@@ -55,26 +55,18 @@
           <label for="kadAtradi">Kad atradi?:</label>
           <input type="text" id="kadAtradi" name="kadAtradi">
         </div>
-        <button type="submit">Gatavs</button>
+        <button type="submit" onclick="showAlert('Item successfully added')">Gatavs</button>
       </form>
-      <script>
-        document.getElementById('registerForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            var username = document.getElementById('username').value;
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-            var confirmPassword = document.getElementById('confirmPassword').value;
-            redirectToIndex();
-        });
-        
-        function redirectToIndex() {
-            window.location.href = "mainlogin.html";
-        }
-    </script>
     </div>
   </main>
   <footer>
     <p>&copy; 2024 Atradu! Incorporated</p>
   </footer>
+
+  <script>
+    function showAlert(message) {
+        alert(message);
+    }
+  </script>
 </body>
 </html>
