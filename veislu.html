@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Atradu!</title>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -22,7 +23,7 @@
 
     <div>
       <h2>Ja pazaudēji</h2>
-      <form>
+      <form id = "japazForm">
         <div>
           <label for="ko">Ko pazaudēji?:</label>
           <input type="text" id="ko" name="ko">
@@ -56,6 +57,20 @@
         </div>
         <button type="submit">Gatavs</button>
       </form>
+      <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            redirectToIndex();
+        });
+        
+        function redirectToIndex() {
+            window.location.href = "mainlogin.html";
+        }
+    </script>
     </div>
   </main>
   <footer>

@@ -25,11 +25,12 @@
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
             var confirmPassword = document.getElementById('confirmPassword').value;
-            
-            // Here you can add your logic to validate the form fields
-            // For simplicity, let's just show an alert with the entered credentials
-            alert('Username: ' + username + '\nEmail: ' + email + '\nPassword: ' + password + '\nConfirm Password: ' + confirmPassword);
+            redirectToIndex();
         });
+        
+        function redirectToIndex() {
+            window.location.href = "mainlogin.html";
+        }
     </script>
 </body>
 </html>
