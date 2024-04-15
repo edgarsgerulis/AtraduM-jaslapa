@@ -5,9 +5,9 @@ $password = $_POST['password'];
 
 // Connect to MySQL database
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database";
+$username = "asd";
+$password = "qwe";
+$dbname = "users";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
